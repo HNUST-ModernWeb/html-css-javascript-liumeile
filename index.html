@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息卡片</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <!-- 头像上传区域 -->
+        <div class="avatar-section">
+            <label for="avatar-upload" class="avatar-wrapper">
+                <img id="avatar" src="https://via.placeholder.com/100" alt="头像">
+                <input type="file" id="avatar-upload" accept="image/*">
+            </label>
+            <p>点击头像可上传更换</p>
+        </div>
+        
+        <!-- 可编辑信息区域 -->
+        <div class="info-section">
+            <div class="input-group">
+                <label for="name-input">姓名</label>
+                <input type="text" id="name-input" placeholder="请输入您的姓名">
+            </div>
+            <div class="input-group">
+                <label for="bio-input">个人简介</label>
+                <textarea id="bio-input" placeholder="请介绍一下自己..."></textarea>
+            </div>
+            <button id="save-btn">保存修改</button>
+        </div>
+
+        <!-- 信息展示区域 -->
+        <div class="display-section">
+            <h2 id="display-name">张三</h2>
+            <p id="display-bio">一名热爱编程的学生。</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
